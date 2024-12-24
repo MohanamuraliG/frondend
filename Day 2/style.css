@@ -1,0 +1,43 @@
+body{
+    margin-left: 35px; 
+    margin-top: 5px;
+    min-height: 100vh;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    
+    display: inline;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    
+}
+#head{
+    min-height: 100vh;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+}
+#about{
+    min-height: 100vh;
+}
+#skills{
+    min-height: 100vh;
+}
+#projects{
+    min-height: 100vh;
+}
+#contact{
+    min-height: 100vh;   
+}
+
+form label{
+    display: block;
+    padding: 5px;
+}
