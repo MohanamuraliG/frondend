@@ -1,43 +1,152 @@
-body{
-    margin-left: 35px; 
-    margin-top: 5px;
-    min-height: 100vh;
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
 }
-nav ul{
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+
+header p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+/* Navigation styles */
+nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
-nav ul li{
-    
+
+nav ul li {
     display: inline;
-    padding: 10px;
 }
 
-nav ul li a{
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    
-}
-#head{
-    min-height: 100vh;
-}
-img{
-    width: 250px;
-    height: 250px;
-    border-radius: 15%;
-}
-#about{
-    min-height: 100vh;
-}
-#skills{
-    min-height: 100vh;
-}
-#projects{
-    min-height: 100vh;
-}
-#contact{
-    min-height: 100vh;   
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
-form label{
-    display: block;
-    padding: 5px;
+nav ul li a:hover {
+    background: #fff;
+    color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Section styles */
+section {
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+section h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+section ul, section ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+section ul li, section ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: auto;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form button {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+footer p, footer a {
+    margin: 0;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+footer a {
+    color: #4CAF50;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
 }
