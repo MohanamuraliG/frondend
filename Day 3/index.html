@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Task Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        th[colspan] {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Task Tracker</h1>
+
+    <div class="form-container">
+        <form id="taskForm">
+            <label for="employeeName">Employee Name:</label>
+            <input type="text" id="employeeName" name="employeeName" required>
+
+            <label for="taskTitle">Task Title:</label>
+            <input type="text" id="taskTitle" name="taskTitle" required>
+
+            <label for="taskDescription">Task Description:</label>
+            <textarea id="taskDescription" name="taskDescription" rows="3" required></textarea>
+
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" name="dueDate" required>
+
+            <button type="button" onclick="addTask()">Assign Task</button>
+        </form>
+    </div>
+
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th rowspan="2">Employee Name</th>
+                <th colspan="2">Task Details</th>
+                <th rowspan="2">Due Date</th>
+            </tr>
+            <tr>
+                <th>Task Title</th>
+                <th>Task Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+           
+        </tbody>
+    </table>
+
+    <script>
+        function addTask() {
+            const employeeName = document.getElementById('employeeName').value;
+            const taskTitle = document.getElementById('taskTitle').value;
+            const taskDescription = document.getElementById('taskDescription').value;
+            const dueDate = document.getElementById('dueDate').value;
+
+            if (!employeeName || !taskTitle || !taskDescription || !dueDate) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            const table = document.getElementById('taskTable').querySelector('tbody');
+            const existingRow = Array.from(table.rows).find(row => row.cells[0] && row.cells[0].innerText === employeeName);
+
+            if (existingRow) {
+                const newRow = table.insertRow(existingRow.rowIndex + 1);
+                newRow.innerHTML = `<td></td><td>${taskTitle}</td><td>${taskDescription}</td><td>${dueDate}</td>`;
+                existingRow.cells[0].rowSpan += 1;
+            } else {
+                const newRow = table.insertRow();
+                newRow.innerHTML = `<td>${employeeName}</td><td>${taskTitle}</td><td>${taskDescription}</td><td>${dueDate}</td>`;
+            }
+
+            document.getElementById('taskForm').reset();
+        }
+    </script>
+</body>
+</html>
