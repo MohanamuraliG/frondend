@@ -102,10 +102,7 @@
                 alert('Please fill in all fields.');
                 return;
             }
-
             const table = document.getElementById('taskTable').querySelector('tbody');
-
-       
                 const newRow = table.insertRow();
                 newRow.innerHTML = `<td>${employeeName}</td><td>${taskTitle}</td><td>${taskDescription}</td><td>${dueDate}</td>`;
             
