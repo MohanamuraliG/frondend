@@ -104,16 +104,11 @@
             }
 
             const table = document.getElementById('taskTable').querySelector('tbody');
-            const existingRow = Array.from(table.rows).find(row => row.cells[0] && row.cells[0].innerText === employeeName);
 
-            if (existingRow) {
-                const newRow = table.insertRow(existingRow.rowIndex + 1);
-                newRow.innerHTML = `<td></td><td>${taskTitle}</td><td>${taskDescription}</td><td>${dueDate}</td>`;
-                existingRow.cells[0].rowSpan += 1;
-            } else {
+       
                 const newRow = table.insertRow();
                 newRow.innerHTML = `<td>${employeeName}</td><td>${taskTitle}</td><td>${taskDescription}</td><td>${dueDate}</td>`;
-            }
+            
 
             document.getElementById('taskForm').reset();
         }
