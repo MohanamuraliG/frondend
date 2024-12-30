@@ -57,6 +57,7 @@ nav ul li a{
 #home img{
     width: 500px;
     height: 300px;
+    margin-top: 80px;
 }
 hr{
     border-bottom: 2px solid black;
@@ -67,7 +68,12 @@ hr{
     grid-template-columns: auto auto ;
     column-gap: 25px;
 }
-#gallery img{
+#img1{
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+}
+ #img2{
     width: 500px;
     height: 300px;
 }
