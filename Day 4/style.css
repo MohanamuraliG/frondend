@@ -1,0 +1,96 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+#container{
+  height: auto;
+  margin: 50px;
+  
+  border-radius: 5px;
+  box-shadow: 0 0 10px  black;
+  background-color: rgb(255, 255, 255);
+  text-align: justify;
+}
+#page{
+    
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+ h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+header h4{
+    text-align: center;
+    font-weight: bold;
+   font-size: 20px;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    display: inline;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+}
+#home{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 25px;
+}
+#home img{
+    width: 500px;
+    height: 300px;
+}
+hr{
+    border-bottom: 2px solid black;
+}
+#gallery{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 25px;
+}
+#gallery img{
+    width: 500px;
+    height: 300px;
+}
+#messages {
+    margin: 20px;
+}
+#messages1 {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 25px;
+}
+#events{
+    margin: 20px;
+    margin-bottom: 20px;
+}
+#event{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 25px;
+}
+footer{
+    text-align: center;
+    background-color: bisque;
+}
