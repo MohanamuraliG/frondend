@@ -1,0 +1,352 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #3D405B;
+    height: 90px;
+    position: fixed;
+    width: 100vw;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+header ul li{
+    display: inline;
+    
+}
+header ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+}
+header ul li a:hover{
+    color: #f2cc8f;
+    
+}
+#navbut:hover{
+    background-color: #f2cc8f;
+    color: white;
+    border: 2px solid #f2cc8f;
+}
+#navbut{
+    padding: 10px;
+    border-radius: 50px;
+    color: #f2cc8f;
+    background: transparent;
+    border:2px solid #f2cc8f;
+    font-size: 15px;
+}
+#logo{
+    margin-left: 40px;
+}
+#logo h2,#logo span{
+    margin-bottom: 0px;
+    color: white;
+}
+.home{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+}
+.home1{
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+justify-content: center;
+margin-left: 100px;
+}
+.home2{
+    display: flex;
+     align-items: center;
+    justify-content: center;
+ }
+ .home2 iframe{
+    width: 600px;
+    height: 350px;
+    margin-top: 150px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+ }
+.homehead h1{
+    font-size: 40px;
+}
+ .homebutton button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 50px;
+    color: white;
+    background: #f2cc8f;
+    border:2px solid #f2cc8f;
+    font-size: 15px;
+ }
+ .homebutton button:hover{
+    background-color: #cb4c47;
+    color: white;
+    border: 2px solid  #cb4c47;
+}
+.about{
+    font-size: 17px;
+}
+.abouthead{
+   text-align: center;
+   font-size: 25px;
+}
+.aboutbody{
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    margin: 20px;
+    column-gap: 30px;
+}
+.aboutimg{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.aboutimg span{
+    margin-left: 145px;
+}
+.aboutimg img{
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+}
+.aboutbody2{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px;
+   
+}
+
+.boutbody21 {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 600px;
+    border-radius: 25px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+ .boutbody21 h1{
+    font-size: 35px;
+}
+
+.boutbody21 input{
+    width: 300px;
+    padding: 15px;
+    border-radius: 50px;
+}
+.boutbody21 button{
+    width: 150px;
+    margin-top: 29px;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+    background: #f2cc8f;
+    border:2px solid #f2cc8f;
+    font-size: 15px;
+}
+.boutbody21 button:hover{
+    background-color: #cb4c47;
+    color: white;
+    border: 2px solid  #cb4c47;
+}
+.memberships h1{
+    text-align: center;
+    font-size: 30px;
+}
+.membershipsbody{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    margin-left: 60px;
+}
+.membershipsbody table{
+   border-collapse: collapse;
+}
+th, td, tr{
+    padding: 20px;
+    
+}
+table{
+    width: 500px;
+}
+th{
+    text-align: left;
+    background-color: #3D405B;
+    border: none;
+}
+tr{
+    text-align: center;
+}
+tbody tr:nth-child(even) {
+    background-color: #f2cc8f;
+    border-radius: 20px;
+}
+.membershipsform form{
+    background-color: #3D405B;
+    padding-left: 50px;
+    width: 420px;
+    height: 450px;
+    border-radius: 20px;
+}
+.membershipsform form input{
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 50px ;
+    display: block;
+}
+.membershipsform h1{
+    padding-top: 10px;
+text-align: left;
+}
+.membershipsform form textarea{
+    width: 320px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.membershipsform form button{
+    width: 330px;
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+    background: #f2cc8f;
+    border:2px solid #f2cc8f;
+    font-size: 15px;
+}
+.membershipsform form button:hover{
+    background-color: #cb4c47;
+    color: white;
+    border: 2px solid  #cb4c47;
+}
+#events{
+    margin-left: 40px;
+}
+#events h1{
+    font-size: 35px;
+}
+.eventsbody1{
+ display: grid;
+ grid-template-columns: 20vw 30vw 40vw;
+}
+.eventsbody1 img{
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.eventsbody2{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 20vw 30vw 40vw;
+   }
+   .eventsbody2 img{
+       width: 400px;
+       height: 250px;
+       border-radius: 20px;
+   }
+.location11 {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.location21{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+#events button{
+    margin-top: 40px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 50px;
+    color: white;
+    background: #f2cc8f;
+    border:2px solid #f2cc8f;
+    font-size: 15px;
+}
+
+#events button:hover{
+    background-color: #cb4c47;
+    color: white;
+    border: 2px solid  #cb4c47;
+}
+#contacts{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+}
+#contacts img{
+    width: 700px;
+    height: 400px;
+    margin-top: 45px;
+}
+#contacts form{
+    padding-left: 50px;
+    width: 420px;
+    height: 450px;
+    border-radius: 20px;
+}
+#contacts form input{
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 50px ;
+    display: block;
+}
+#contacts h1{
+    padding-top: 10px;
+text-align: left;
+}
+#contacts form textarea{
+    width: 320px;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#contacts form button{
+    width: 330px;
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+    background: #f2cc8f;
+    border:2px solid #f2cc8f;
+    font-size: 15px;
+}
+#contacts form button:hover{
+    background-color: #cb4c47;
+    color: white;
+    border: 2px solid  #cb4c47;
+}
+.contactshead{
+    margin-left: 60px;
+    font-size: 40px;
+}
+.contacts2{
+    margin-left: 60px;
+}
+.contacts3{
+    margin-left: 20px;
+}
+.contacts3 h1{
+    font-size: 30px;
+}
+.contacts3 p{
+    margin-bottom: 15px;
+}
+#page{
+    height: 20vh;
+}
+.aboutbody1{
+    width: 600px;
+}
