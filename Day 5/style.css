@@ -1,5 +1,4 @@
 body{
-    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -12,6 +11,7 @@ header{
     height: 90px;
     position: fixed;
     width: 100vw;
+    z-index: 1;
 }
 
 header ul{
@@ -20,6 +20,8 @@ header ul{
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    height: 90px;
+    padding-left: 150px;
 }
 header ul li{
     display: inline;
@@ -55,10 +57,18 @@ header ul li a:hover{
     margin-bottom: 0px;
     color: white;
 }
-.home{
+#home{
+    background-image: url(homebg.jpg);
     height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home{
+    
     display: grid;
     grid-template-columns: 50vw 50vw;
+    
 }
 .home1{
 display: flex;
@@ -98,8 +108,13 @@ margin-left: 100px;
 }
 .about{
     font-size: 17px;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .abouthead{
+    padding-top: 30px;
    text-align: center;
    font-size: 25px;
 }
@@ -114,7 +129,7 @@ margin-left: 100px;
     grid-template-columns: auto auto;
 }
 .aboutimg span{
-    margin-left: 145px;
+    margin-left: 120px;
 }
 .aboutimg img{
     width: 350px;
@@ -124,7 +139,7 @@ margin-left: 100px;
 .aboutbody2{
     display: grid;
     grid-template-columns: auto auto;
-    margin: 20px;
+    /* margin: 20px; */
    
 }
 
@@ -132,10 +147,9 @@ margin-left: 100px;
     background-color: rgba(255, 255, 255, 0.75);
     width: 600px;
     border-radius: 25px;
-    height: 400px;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 40px;
 }
  .boutbody21 h1{
     font-size: 35px;
@@ -144,11 +158,13 @@ margin-left: 100px;
 .boutbody21 input{
     width: 300px;
     padding: 15px;
-    border-radius: 50px;
+    
+}
+.boutbody21 input{
+    border: none;
 }
 .boutbody21 button{
     width: 150px;
-    margin-top: 29px;
     padding: 10px;
     border-radius: 50px;
     color: white;
@@ -161,21 +177,28 @@ margin-left: 100px;
     color: white;
     border: 2px solid  #cb4c47;
 }
+.memberships{
+    background-color: white;
+    height: 100vh;
+}
 .memberships h1{
+    padding-top: 30px;
     text-align: center;
     font-size: 30px;
 }
 .membershipsbody{
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    margin-left: 60px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
 }
 .membershipsbody table{
    border-collapse: collapse;
+   width: 100%;
 }
 th, td, tr{
-    padding: 20px;
-    
+    padding: 22px 36px;
 }
 table{
     width: 500px;
@@ -189,36 +212,45 @@ tr{
     text-align: center;
 }
 tbody tr:nth-child(even) {
-    background-color: #f2cc8f;
+    background-color: #f4f1de;
     border-radius: 20px;
 }
 .membershipsform form{
     background-color: #3D405B;
-    padding-left: 50px;
-    width: 420px;
+    /* padding-left: 50px; */
+    width: 520px;
     height: 450px;
     border-radius: 20px;
+    align-items: center;
 }
 .membershipsform form input{
     margin-bottom: 20px;
     padding: 15px;
-    width: 300px;
+    width: 100%;
     border-radius: 50px ;
     display: block;
+    border: 2px solid gray;
+}
+.membershipsform form input:hover{
+    border: 2px solid black;
 }
 .membershipsform h1{
     padding-top: 10px;
 text-align: left;
 }
 .membershipsform form textarea{
-    width: 320px;
+    width: 100%;
     height: 80px;
     border-radius: 10px;
     margin-bottom: 20px;
+    border: 2px solid gray;
+}
+.membershipsform form textarea:hover{
+    border: 2px solid black;
 }
 .membershipsform form button{
-    width: 330px;
-    padding: 20px;
+    width: 100%;
+    padding: 15px;
     border-radius: 50px;
     color: white;
     background: #f2cc8f;
@@ -231,7 +263,12 @@ text-align: left;
     border: 2px solid  #cb4c47;
 }
 #events{
-    margin-left: 40px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 #events h1{
     font-size: 35px;
@@ -284,39 +321,49 @@ text-align: left;
 }
 #contacts{
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
 }
 #contacts img{
     width: 700px;
     height: 400px;
     margin-top: 45px;
+   
 }
 #contacts form{
-    padding-left: 50px;
-    width: 420px;
-    height: 450px;
+    margin-left: 50px;
+    width: 590px;
     border-radius: 20px;
 }
 #contacts form input{
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
     width: 300px;
+    border: 2px solid gray;
     border-radius: 50px ;
     display: block;
+    
+}
+#contacts form input:hover{
+    border: 2px solid black;
 }
 #contacts h1{
     padding-top: 10px;
 text-align: left;
 }
 #contacts form textarea{
-    width: 320px;
-    height: 80px;
+    width: 100%;
+    height: 120px;
     border-radius: 10px;
     margin-bottom: 20px;
+    border: 2px solid gray;
+}
+#contacts form textarea:hover{
+    border: 2px solid black;
 }
 #contacts form button{
-    width: 330px;
-    padding: 20px;
+    width: 100%;
+    padding: 15px;
     border-radius: 50px;
     color: white;
     background: #f2cc8f;
@@ -349,4 +396,35 @@ text-align: left;
 }
 .aboutbody1{
     width: 600px;
+}
+.social-icon {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.social-icon-item {
+    display: inline-block;
+}
+
+.social-icon-link {
+    display: block;
+    width: 40px; 
+    height: 40px; 
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #3d405b;
+    color: white;
+    overflow: hidden; 
+}
+
+.social-icon-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.social-icon-link:hover {
+    background-color: #198754;
 }
