@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    background-color: #0d6efd;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 200px;
+    
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 20px;
+}
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+ }
+
+#home{
+    background-image: url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.logo{
+    display: flex;
+}
+.btn{
+    background-color: #cb4c47;
+    color: white;
+    border: none;
+    outline: none;
+    display: inline-block;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 25px;
+    border-radius: 25px;
+}
+.home-heading-1{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.home-heading-2{
+    font-size: 48px;
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+.home-para{
+    text-align: justify;
+}
