@@ -36,16 +36,16 @@ nav ul li a:hover {
 
 #home{
     background-image: url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg);
-    height: 100vh;
+    height: 960px;
+    width: inherit;
+    border-radius: 0 0 120px 120px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
 .home-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     height: 100vh;
 }
 .logo{
