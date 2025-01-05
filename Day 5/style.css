@@ -121,20 +121,24 @@ margin-left: 100px;
 .aboutbody{
     display: grid;
     grid-template-columns: 40vw 60vw;
-    margin: 20px;
+    margin: 20px 60px;
     column-gap: 30px;
 }
 .aboutimg{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* background-color: #198754; */
 }
 .aboutimg span{
-    margin-left: 120px;
+    margin-left: 65px;
 }
 .aboutimg img{
-    width: 350px;
-    height: 250px;
+    width: 280px;
+    height: 200px;
     border-radius: 20px;
+    
 }
 .aboutbody2{
     display: grid;
@@ -337,7 +341,7 @@ text-align: left;
 }
 #contacts form input{
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 15px 20px;
     width: 300px;
     border: 2px solid gray;
     border-radius: 50px ;
