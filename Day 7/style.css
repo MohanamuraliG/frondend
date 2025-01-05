@@ -76,10 +76,21 @@ nav ul li a:hover {
 }
 .home-heading-2{
     font-size: 48px;
+    color: #fff;
     margin-top: 20px;
     position: relative;
     padding-bottom: 5px;
     margin-bottom: 40px;
+    font-weight: 700;
+}
+.home-heading-2:after {
+    position: absolute;
+    background-image: url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/caption-dec.png);
+    width: 202px;
+    height: 12px;
+    content: '';
+    left: 125px;
+    bottom: 0;
 }
 .home-para{
     text-align: justify;
