@@ -86,12 +86,14 @@ function largestelementcalculate(){
 function vowelfindchecking(){
     let a=document.getElementById("vowelsinput").value;
     let b="";
+    let z=0;
     for(let i=0;i<a.length;i++){
         if(a.charAt(i)=='a'||a.charAt(i)=='e'||a.charAt(i)=='i'||a.charAt(i)=='o'||a.charAt(i)=='u'){
             b+=a.charAt(i)+", ";
+            z++;
         }
     }
-    document.getElementById("vowelanswer").innerHTML=b;
+    document.getElementById("vowelanswer").innerHTML=b+" count : "+z;
 }
 
 function starprintchecking(){
