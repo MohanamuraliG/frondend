@@ -1,3 +1,4 @@
+// 1
 
 function oddevenchecking(){
     let a=document.getElementById("oddeveninputelement").value;
@@ -9,6 +10,7 @@ else{
 }
 }
 
+// 2
 
 function printnumberchecking(){
     let output2=document.getElementById("printnumberanswer");
@@ -19,6 +21,7 @@ function printnumberchecking(){
     }
 }
 
+// 3
 
 function printmultipleschecking(){
     let output=document.getElementById("multipleanswer");
@@ -33,6 +36,7 @@ function printmultipleschecking(){
 
 }
 
+// 4
 
 function findprimechecking(){
     let input=document.getElementById("primeinput").value;
@@ -55,6 +59,7 @@ function findprimechecking(){
     }
 }
 
+// 5
 
 function sumofnumberchecking(){
     let output=document.getElementById("sumofnumberanswer");
@@ -65,6 +70,9 @@ function sumofnumberchecking(){
     output.innerHTML=a;
 }
 
+
+// 6
+
 let arr=[];
 function arrayelementinput(){
     let input=document.getElementById("arrayinput");
@@ -73,6 +81,9 @@ function arrayelementinput(){
    console.log(arr);
    input.value="";
 }
+
+
+
 function largestelementcalculate(){
     let a=0;
     for(let i=0;i<arr.length;i++){
@@ -82,6 +93,8 @@ function largestelementcalculate(){
     }
     document.getElementById("largestelementanswer").innerHTML=a;
 } 
+
+// 7
 
 function vowelfindchecking(){
     let a=document.getElementById("vowelsinput").value;
@@ -96,6 +109,9 @@ function vowelfindchecking(){
     document.getElementById("vowelanswer").innerHTML=b+" count : "+z;
 }
 
+
+// 8
+
 function starprintchecking(){
     let a=document.getElementById("starinput").value;
     let output=document.getElementById("staranswer");
@@ -107,6 +123,8 @@ function starprintchecking(){
         output.appendChild(para);
     }
 }
+
+// 9
 
 function fizzbuzzchecking(){
     for(let i=1;i<=50;i++){
@@ -124,6 +142,9 @@ function fizzbuzzchecking(){
         }
     }
 }
+
+
+// 10
 
 function reverseprintchecking(){
     let a=document.getElementById("reverseinput").value;
