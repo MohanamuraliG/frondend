@@ -214,3 +214,8 @@ function noduplicate() {
 }
 
 noduplicate();
+
+let arr=[1,2,3,4,5,6,1,2,3,4];
+let b=arr.filter((value , index , array)=>array.indexOf(value)==array.lastIndexOf(value));
+console.log(b);
+
