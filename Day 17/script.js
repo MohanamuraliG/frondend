@@ -63,7 +63,7 @@ let table2=document.getElementById("table2");
 for(let i=0;i<data.length;i++){
     
     
-    for(let j=0;j<data[0].tasks.length;j++){
+    for(let j=0;j<data[i].tasks.length;j++){
         let tablerow=document.createElement("tr");
         let tablename=document.createElement("td");
         tablename.innerHTML=data[i].name
