@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mb-4">Available Cars for Rent</h1>
+    <div id="carList" class="row">
+      <!-- Car items will be dynamically added here -->
+    </div>
+  </div>
+
+  <script>
+    // Example car data
+    const cars = [
+      { id: 1, model: "Toyota Corolla", pricePerDay: 50 },
+      { id: 2, model: "Honda Civic", pricePerDay: 60 },
+      { id: 3, model: "Ford Mustang", pricePerDay: 120 },
+    ];
+
+    // Render cars on the home page
+    const carList = document.getElementById("carList");
+    cars.forEach(car => {
+      const carCard = `
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">${car.model}</h5>
+              <p class="card-text">Price per day: $${car.pricePerDay}</p>
+              <button class="btn btn-primary" onclick="bookNow(${car.id})">Book Now</button>
+            </div>
+          </div>
+        </div>`;
+      carList.innerHTML += carCard;
+    });
+
+    // "Book Now" functionality
+    function bookNow(carId) {
+      const selectedCar = cars.find(car => car.id === carId);
+      localStorage.setItem("selectedCar", JSON.stringify(selectedCar));
+      window.location.href = "booking.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #343a40;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .event-status {
+    font-weight: bold;
+  }
+  
+  .event-status.upcoming {
+    color: green;
+  }
+  
+  .event-status.past {
+    color: red;
+  }
+  
